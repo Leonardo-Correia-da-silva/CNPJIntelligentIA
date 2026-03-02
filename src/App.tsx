@@ -83,7 +83,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#050608] text-slate-300 font-sans selection:bg-sky-500/30 selection:text-sky-200 overflow-x-hidden">
+    <div className="min-h-screen bg-[#050608] text-slate-300 font-sans selection:bg-sky-500/30 selection:text-sky-200 overflow-x-hidden pt-20">
       
       {/* Overlay effects */}
       <div className="fixed inset-0 z-[100] pointer-events-none opacity-[0.03] bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[size:100%_2px,3px_100%]" />
@@ -94,8 +94,8 @@ const App: React.FC = () => {
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-sky-900/30 blur-[120px] rounded-full" />
       </div>
 
-     {/* Nav */}
-      <nav className="sticky top-0 z-50 border-b border-white/5 bg-[#050608]/80 backdrop-blur-xl">
+    {/* Nav - Ajustado para fixo no topo e sem botão */}
+      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-[#050608]/80 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3 group">
             <div className="p-2 bg-black border border-sky-500/30 rounded-lg shadow-[0_0_15px_rgba(56,189,248,0.1)]">
@@ -113,10 +113,6 @@ const App: React.FC = () => {
             <a href="#dossie" className="hover:text-sky-400 transition">Dossiê</a>
             <a href="#produtividade" className="hover:text-sky-400 transition">Produtividade</a>
           </div>
-
-          <a href="https://wa.me/5519999529126" target="_blank" rel="noreferrer" className="relative group px-4 md:px-6 py-2 overflow-hidden rounded-full border border-sky-500/50 transition-all hover:border-sky-400">
-            <span className="relative text-[10px] md:text-xs font-bold tracking-widest uppercase text-sky-400 group-hover:text-white">Iniciar Consulta</span>
-          </a>
         </div>
       </nav>
 
@@ -185,7 +181,7 @@ const App: React.FC = () => {
           <div className="p-6 md:p-10 bg-sky-500/5 border border-sky-500/10 rounded-[2.5rem] space-y-6 shadow-2xl shadow-sky-500/5">
             <div className="flex items-center gap-3 text-sky-400">
               <CheckCircle2 size={24} />
-              <h3 className="font-black uppercase tracking-widest italic text-xs md:text-sm">A Solução (AvantTech)</h3>
+              <h3 className="font-black uppercase tracking-widest italic text-xs md:text-sm">A Solução (CNPJ Intelligent IA)</h3>
             </div>
             <ul className="space-y-4 font-mono text-xs md:text-xs uppercase tracking-tight text-slate-300">
               <li className="flex items-start gap-3"><span className="text-sky-400">[OK]</span> Dossiê completo exportado diretamente para Excel.</li>
@@ -269,7 +265,7 @@ const App: React.FC = () => {
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
           <div className="flex items-center gap-3">
             <Cpu size={18} className="text-sky-900" />
-            <span className="text-[9px] md:text-[10px] font-bold tracking-[0.3em] md:tracking-[0.5em] text-slate-700 uppercase italic">Avant Technology Systems</span>
+            <span className="text-[9px] md:text-[10px] font-bold tracking-[0.3em] md:tracking-[0.5em] text-slate-700 uppercase italic">CNPJ Intelligent IA Systems</span>
           </div>
           <p className="text-[8px] md:text-[9px] font-mono text-slate-800 uppercase tracking-widest">© 2026 Secured Infrastructure. Todos os direitos reservados.</p>
         </div>
